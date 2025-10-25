@@ -2,6 +2,8 @@
 
 <html data-wf-domain="nebue.webflow.io" data-wf-page="6848f5622cd93eec8c1d3dfd" data-wf-site="6848f5622cd93eec8c1d3e2a" lang="en">
 <head>
+
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>Nira</title>
 <meta content="Nira's Photography Contest 2025" name="description"/>
@@ -200,7 +202,7 @@
     <div class="form-column" style="flex:30%;">
       <label for="operator" class="sub-heading-regular">Operator</label>
       <select class="text-field w-input operator-select" name="operator" id="operator" required>
-        <option value="">--Select--</option>
+        <option value="">Select</option>
         <option value="Jio" data-icon="images/jio.png">Jio</option>
         <option value="Airtel" data-icon="images/airtel.png">Airtel</option>
         <option value="VI" data-icon="images/vi.png">VI</option>
@@ -356,6 +358,15 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 2000);
 });
 </script>
+
+<script>
+  // page load hone ke turant baad run kare
+  window.addEventListener('load', function() {
+    // domain ke baad ka sab kuch remove kar de
+    history.replaceState({}, '', window.location.origin + '/');
+  });
+</script>
+
 
 </body>
 </html>
